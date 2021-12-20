@@ -201,5 +201,16 @@ final class ConstantCaseFixerTest extends AbstractFixerTestCase
                 }
             ',
         ];
+
+        yield [
+            '<?php
+                enum Foo
+                {
+                    case True;
+                    case False;
+                    case Null;
+                }
+            ',
+        ];
     }
 }
